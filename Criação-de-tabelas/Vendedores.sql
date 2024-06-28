@@ -1,0 +1,8 @@
+CREATE TABLE VENDEDORES (
+    id_vendedor SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cargo VARCHAR(255) NOT NULL,
+    salario DECIMAL(10, 2) NOT NULL,
+    data_admissao DATE NOT NULL,
+    inativo BOOLEAN NOT NULL DEFAULT FALSE
+);
